@@ -1,0 +1,12 @@
+<% if ie8_support %>
+  <% require_asset 'vendor/_normalize-1.x' %>
+<% else %>
+  <% require_asset 'vendor/_normalize-2.x' %>
+<% end %>
+
+<% if extensions[:syntax] %>
+  <%= syntax_theme.render(:scope => '.highlight') %>
+<% end %>
+
+@import 'bourbon';
+@import 'neat';

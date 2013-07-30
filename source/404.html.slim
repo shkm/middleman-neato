@@ -1,0 +1,26 @@
+---
+layout: false
+---
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title 404: Page Not Found
+    == stylesheet_link_tag '404'
+
+  body
+    .container
+      h1
+        ' Not found
+        span
+          | :(
+      p Sorry, but the page you were trying to view does not exist.
+      p It looks like this was the result of either:
+      ul
+        li a mistyped address
+        li an out-of-date link
+
+      javascript:
+        var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
+      == javascript_include_tag '//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js'
+

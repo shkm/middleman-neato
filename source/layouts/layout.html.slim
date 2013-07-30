@@ -1,0 +1,38 @@
+doctype html
+/[if lt IE 7]
+  | <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7]
+  | <html class="no-js lt-ie10 lt-ie9 lt-ie8">
+/[if IE 8]
+  | <html class="no-js lt-ie10 lt-ie9">
+/[if IE 9]
+  | <html class="no-js lt-ie10">
+| <!--[if (gt IE 9)|!(IE)]<!-->
+html.nojs
+  | <!--<![endif]-->
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    title = current_page.data.title
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width, initial-scale=1"
+
+    / Place favicon.ico and apple-touch-icon.png in the root directory.
+
+    = stylesheet_link_tag 'app'
+
+    / Consider a custom Modernizr build.
+    = javascript_include_tag 'vendor/modernizr-2.x.js'
+
+  body
+    /[if lte IE 7]
+      / Ancient browser notice.
+      p.browsehappy
+        | You are using an <strong>outdated</strong> browser. Please
+        a<> href="http://browsehappy.com/" upgrade your browser
+        | to improve your experience.
+
+    == yield
+
+    = javascript_include_tag 'app'
+    = partial 'partials/_ga'
