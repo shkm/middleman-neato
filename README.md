@@ -8,7 +8,7 @@ Neato sets you up with the following, straight out of the box:
 - [Slim](http://slim-lang.com/) templating
 - [Sass](http://sass-lang.com/) support with [Bourbon](http://bourbon.io/) & [Neat](http://neat.bourbon.io/)
 - A basic page layout & 404 page based on [HTML5 Boilerplate](http://html5boilerplate.com/) (in Slim)
-- Syntax highlighting via [middleman-syntax](com/middleman/), with an easy theme toggle
+- Syntax highlighting via [middleman-syntax](https://github.com/middleman/middleman-syntax), with an easy theme toggle
 - Simple Google Analytics support
 - [Livereload](https://github.com/middleman/middleman-livereload)
 - CSS & Javascript minification, image optimisation and gzipping on build
