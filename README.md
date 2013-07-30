@@ -15,7 +15,7 @@ Neato sets you up with the following, straight out of the box:
 - Optional IE8 support setting which loads appropriate [normalize.css](http://necolas.github.io/normalize.css/) & [jQuery](http://jquery.com/) versions
 - …and probably some other stuff.
 
-Thakns to the brilliance of [Middleman], this should get you up and running on new projects pretty darn fast.
+Thanks to the brilliance of [Middleman], this should get you up and running on new projects pretty darn fast.
 
 
 ## Install
