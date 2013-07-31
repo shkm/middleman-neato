@@ -2,7 +2,9 @@
 
 A nice project template for [Middleman], the fantastic static site building tool.
 
+
 ## Features
+
 Neato sets you up with the following, straight out of the box:
 
 - [Slim](http://slim-lang.com/) templating
@@ -19,7 +21,7 @@ Neato sets you up with the following, straight out of the box:
 Thanks to the brilliance of [Middleman], this should get you up and running on new projects pretty darn fast.
 
 
-## Install
+## Use
 
 Install [Middleman]:
 
@@ -35,6 +37,19 @@ Install gems and get to work!
     cd my-project
     bundle install
     middleman
+
+
+## Template Install
+
+If you find yourself using Neato often, you can install it as a middleman template:
+
+    git clone git@github.com:shkm/middleman-neato.git ~/.middleman/neato
+
+Now you can simply init new projects with the Neato template:
+
+    middleman init -T=neato my-project
+
+Just don't forget to update `~/.middleman/neato` every now and then.
 
 
 ## Copyright and licence
