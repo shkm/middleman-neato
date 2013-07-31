@@ -18,6 +18,9 @@ set :syntax_theme, Rouge::Themes::Base16
 # Slim's default format is xhtml. Why oh why?
 Slim::Engine.default_options[:format] = :html5
 
+# Ignores
+ignore '/calendar.html'
+
 
 ######################################################################
 # Blog settings.
@@ -46,7 +49,8 @@ activate :blog do |blog|
   # blog.page_link = "page/:num"
 end
 
-page "/feed.xml", :layout => false
+# Enable XML feed. Don't forget to edit feed.xml.builder first.
+# page "/feed.xml", :layout => false
 
 
 ######################################################################

@@ -19,6 +19,9 @@ gem "middleman-neat", "~> 0.0.4"
 # Blogging
 gem "middleman-blog"
 
+# XML Feeds
+gem "builder", "~> 3.0.0"
+
 # Livereload
 gem "middleman-livereload", "~> 3.1.0"
 
