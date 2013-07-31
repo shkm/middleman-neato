@@ -9,6 +9,21 @@ set :syntax_theme, Rouge::Themes::Base16
 # Slim's default format is xhtml. Why oh why?
 Slim::Engine.default_options[:format] = :html5
 
+Time.zone = 'Amsterdam'
+
+# Blogging.
+activate :blog do |blog|
+  # Post source location (/blog/year-month-day-title.html)
+  blog.prefix = 'blog'
+  # blog.sources = ':year-:month-:day-:title.html'
+  
+  # Target location (/blog/title.html)
+  blog.permalink = ':year/:title.html'
+
+  # Tags
+  # blog.taglink = 'tags/:tag.html'
+end
+
 configure :development do
   Slim::Engine.default_options[:pretty] = true
   activate :livereload

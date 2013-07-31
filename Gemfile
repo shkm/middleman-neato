@@ -16,6 +16,9 @@ gem "slim", "~> 2.0.0"
 # Bourbon + Neat
 gem "middleman-neat", "~> 0.0.4"
 
+# Blogging
+gem "middleman-blog"
+
 # Livereload
 gem "middleman-livereload", "~> 3.1.0"
 
