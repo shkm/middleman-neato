@@ -73,11 +73,12 @@ configure :build do
   activate :asset_hash
 
   # Ensmallen assets
+  activate :minify_html, remove_input_attributes: false
   activate :minify_css
   activate :minify_javascript
   activate :image_optim
-  activate :gzip
-  #
+  activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
+
   # Change to your Google Analytics key (e.g. UA-XXXXX-Y)
   # To disable GA, leave unset or set to nil
   set :ga_key, nil
