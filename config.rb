@@ -22,6 +22,11 @@ set :syntax_theme, Rouge::Themes::Base16
 # TODO: extract to MM extension
 set :ga_key, 'UA-XXXXXXX-Y'
 
+# Change to your Disqus shortname.
+# To Disable Disqus, leave unset or set to nil
+# TODO: extract to MM extension
+set :disqus_shortname, nil
+
 # Locations.
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
