@@ -78,7 +78,6 @@ end
 ######################################################################
 
 configure :development do
-  Slim::Engine.default_options[:pretty] = true
   activate :livereload
 end
 
