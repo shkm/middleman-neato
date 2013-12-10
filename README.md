@@ -15,8 +15,6 @@ Neato sets you up with the following, straight out of the box:
 - Simple Google Analytics support
 - [Livereload](https://github.com/middleman/middleman-livereload)
 - CSS & Javascript minification, image optimisation and gzipping on build
-- Optional IE8 support setting which loads appropriate [normalize.css](http://necolas.github.io/normalize.css/) & [jQuery](http://jquery.com/) versions
-- …and probably some other stuff.
 
 Thanks to the brilliance of [Middleman], this should get you up and running on new projects pretty darn fast.
 
