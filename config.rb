@@ -2,6 +2,12 @@
 # General settings.
 ######################################################################
 
+# Meta
+set :meta, {
+  title: 'Foo',
+  url: 'http://foo.com',
+}
+
 # Asset locations
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
