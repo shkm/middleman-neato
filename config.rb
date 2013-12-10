@@ -8,11 +8,6 @@ set :meta, {
   url: 'http://foo.com',
 }
 
-# Asset locations
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
-
 # Loads IE8 compatible versions of normalize & jQuery if true (1.x).
 # Otherwise, loads IE8 incompatible versions (2.x).
 set :ie8_support, false
@@ -26,6 +21,19 @@ set :syntax_theme, Rouge::Themes::Base16
 # Code will only be injected in build environment
 # TODO: extract to MM extension
 set :ga_key, 'UA-XXXXXXX-Y'
+
+# Locations.
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
+set :partials_dir, 'partials'
+
+after_configuration do
+# Add bower's directory to sprockets asset path.
+  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+  sprockets.append_path File.join "#{root}", @bower_config["directory"]
+end
 
 # Slim's default format is xhtml. Why oh why?
 Slim::Engine.default_options[:format] = :html5
