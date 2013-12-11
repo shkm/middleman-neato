@@ -19,6 +19,10 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    em-websocket (0.5.0)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.5.3)
+    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     exifr (1.1.3)
@@ -28,6 +32,7 @@ GEM
     haml (4.0.4)
       tilt
     hike (1.2.3)
+    http_parser.rb (0.5.3)
     i18n (0.6.9)
     image_optim (0.9.1)
       exifr (~> 1.1.3)
@@ -68,6 +73,11 @@ GEM
     middleman-imageoptim (0.1.3)
       image_optim (~> 0.9.1)
       middleman-core (>= 3.0)
+    middleman-livereload (3.1.0)
+      em-websocket (>= 0.2.0)
+      middleman-core (>= 3.0.2)
+      multi_json (~> 1.0)
+      rack-livereload
     middleman-minify-html (3.1.1)
       middleman-core (~> 3.0)
     middleman-neat (0.0.4)
@@ -87,6 +97,8 @@ GEM
       sass (>= 3.2)
     progress (3.0.0)
     rack (1.5.2)
+    rack-livereload (0.3.15)
+      rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rb-fsevent (0.9.3)
@@ -129,6 +141,7 @@ DEPENDENCIES
   middleman
   middleman-blog
   middleman-imageoptim
+  middleman-livereload
   middleman-minify-html
   middleman-neat
   middleman-syntax

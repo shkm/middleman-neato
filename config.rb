@@ -65,7 +65,7 @@ end
 ######################################################################
 
 configure :development do
-  activate :livereload
+  activate :livereload, apply_js_live: false, apply_css_live: false
 end
 
 

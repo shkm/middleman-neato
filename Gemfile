@@ -10,5 +10,6 @@ gem 'slim'
 gem "builder" # XMLfeeds
 gem "middleman-syntax"
 # gem "middleman-gh-pages" # GitHub Pages deployment
+gem "middleman-livereload"
 gem "middleman-minify-html"
 gem "middleman-imageoptim"
