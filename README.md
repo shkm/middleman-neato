@@ -28,7 +28,7 @@ Install [Middleman]:
 
 Clone Neato:
 
-    git clone git@github.com:shkm/middleman-neato.git my-project
+    git clone https://github.com/shkm/middleman-neato.git my-project
 
 Install gems and get to work!
 
