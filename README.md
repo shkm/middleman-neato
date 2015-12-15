@@ -2,6 +2,8 @@
 
 A nice project template for [Middleman], the fantastic static site building tool.
 
+**No longer maintained, but feel free to fork it.**
+
 
 ## Features
 
